@@ -1,7 +1,7 @@
 import pandas as pd
 
 # Leer el archivo Excel
-path = r"C:\Users\samue\Desktop\AlgoritmoFiltrado\input\hojaDatos.xlsx"
+path = r"..\input\hojaDatos.xlsx"
 df = pd.read_excel(path,header=None)
 
 # Extraer la primera fila para usar como nombres de columnas
@@ -25,7 +25,7 @@ filtered_data = data[
 ]
 
 # Ruta del archivo de salida
-output_path = r"C:\Users\samue\Desktop\AlgoritmoFiltrado\output\resultado.xlsx"
+output_path = r"..\output\resultado.xlsx"
 
 # Guardar los registros filtrados en un nuevo archivo Excel
 filtered_data.to_excel(output_path, index=False)
